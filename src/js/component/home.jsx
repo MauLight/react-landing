@@ -25,7 +25,7 @@ const Home = () => {
 					description= {"But we can't avoid the face of the deep, when all colors fade."} 
 					buttonLabel={"Breathe"} 
 					buttonUrl={"https://wakeupmau.com/"} />
-					<Carousel />
+					
 					<div className="card-hdr">
 						<Card 
 						title_1={"Awaken"} 

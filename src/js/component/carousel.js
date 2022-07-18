@@ -2,7 +2,7 @@ import React from "react";
 
 const Carousel = () => {
     return (
-        <div id="carouselExampleFade" className="carousel slide " data-bs-ride="carousel">
+        <div id="carouselExampleFade" className="carousel slide img-fluid" data-bs-ride="carousel">
             <div className="carousel-inner mh-100 mw-100">
                 <div className="carousel-item active">
                     <img src="https://i.postimg.cc/VNwGBFZm/240816485-168085465440308-8214795699360219667-n.jpg" className="d-block w-100" alt="..."/>
