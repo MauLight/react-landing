@@ -1,0 +1,25 @@
+.sexy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+.navbar-brand {
+    font-family: 'MuseoModerno', cursive;
+}
+
+.navbar {
+    padding: 0%;
+}
+
+.navbar a {
+    color: white;
+}
+
+.col-md-6 {
+    width: -webkit-fill-available;
+    border-radius: 0%;
+}
