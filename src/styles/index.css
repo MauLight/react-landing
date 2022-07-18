@@ -50,3 +50,15 @@
     height: 150px;*/
 }
 
+.card-img, .card-img-top {
+    border-radius: 0%   ;
+}
+
+img {
+    border-radius: 0%;
+}
+
+div {
+    border-radius: 0%;
+    background-color: black;
+}

@@ -5,7 +5,7 @@ import Navbar from "./navbar.js";
 import Jumbotron from "./jumbotron.js";
 import Card from "./card.js";
 import Footer from "./footer.js";
-import Carousel from "./carousel.js";
+
 
 //create your first component
 const Home = () => {
