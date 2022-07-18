@@ -23,3 +23,29 @@
     width: -webkit-fill-available;
     border-radius: 0%;
 }
+
+.container, .container-lg, .container-md, .container-sm {
+    max-width: initial;
+    padding: 0%;
+    background-color: black;
+}
+
+.carousel-item {
+    min-width:1518px; 
+    height: 650px;
+    background-position: center center;
+}
+
+.carousel-item > img {
+    /* Set the crop location by shifting the image
+     * up by 70px and to the right by 30px.
+     */
+    position: relative;
+    top: -150px;
+    left: 0px;
+
+    /* Scale the image as you normally would. 
+    width: 300px;
+    height: 150px;*/
+}
+

@@ -1,34 +1,51 @@
 import React from "react";
+import PropType from "prop-types";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div className="card-group">
-            <div className="card">
-                <img src="https://i.postimg.cc/RhC1xBjx/171160225-1431019090579516-8441894107852651110-n.jpg" className="card-img-top" alt="..."/>
+            <div className="card text-white bg-dark">
+                <img src= {props.imgUrl_1} className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title">{props.title_1}</h5>
+                        <p className="card-text">{props.description_1}</p>
+                        <p className="card-text"><small className="text-muted">{props.update_1}</small></p>
                     </div>
             </div>
-            <div className="card">
-                <img src="https://i.postimg.cc/W3wmy3Y7/240581826-239034671444483-4703377451581744606-n.jpg" className="card-img-top" alt="..."/>
+            <div className="card text-white bg-dark">
+                <img src={props.imgUrl_2} className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title">{props.title_2}</h5>
+                        <p className="card-text">{props.description_2}</p>
+                        <p className="card-text"><small className="text-muted">{props.update_2}</small></p>
                     </div>
             </div>
-            <div className="card">
-                <img src="https://i.postimg.cc/BbhTqz0L/197778649-127553156150703-2206992918918469626-n.jpg" className="card-img-top" alt="..."/>
+            <div className="card text-white bg-dark">
+                <img src={props.imgUrl_3} className="card-img-top" alt="..."/>
                     <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                        <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+                        <h5 className="card-title">{props.title_3}</h5>
+                        <p className="card-text">{props.description_3}</p>
+                        <p className="card-text"><small className="text-muted">{props.update_3}</small></p>
                     </div>
             </div>
         </div>
     )
 }
+
+Card.propTypes = {
+	title_1: PropType.string,
+	title_2: PropType.string,
+	title_3: PropType.string,
+	description_1: PropType.string,
+	description_2: PropType.string,
+	description_3: PropType.string,
+	update_1: PropType.string,
+	update_2: PropType.string,
+	update_3: PropType.string,
+    imgUrl_1: PropType.string,
+    imgUrl_2: PropType.string,
+    imgUrl_3: PropType.string
+};
+
 
 export default Card
